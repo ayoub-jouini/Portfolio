@@ -5,10 +5,10 @@ import { useTheme } from "next-themes";
 const DarkModeButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();
 
-  let mode: string = "light";
+  let mode: string = "Dark";
   useEffect(() => {
-    theme === "dark" ? (mode = "Dark") : (mode = "Light");
-  });
+    theme === "light" ? (mode = "Light") : (mode = "Dark");
+  }, [theme, setTheme]);
 
   return (
     <div className="flex flex-row justify-between toggle">

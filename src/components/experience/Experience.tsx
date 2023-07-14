@@ -33,7 +33,7 @@ const Experience: React.FC<Props> = () => {
         {experience
           .filter((exp) => exp.id === activeExp)
           .map((exp, key) => (
-            <div className="flex flex-col justify-center">
+            <div key={key} className="flex flex-col justify-center">
               <div className="flex justify-between">
                 <div className="flex flex-col">
                   <h4 className="text-secondary font-bold text-2xl">
