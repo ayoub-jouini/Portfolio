@@ -2,6 +2,7 @@ import CallToAction from "../components/callToAction/CallToAction";
 import Header from "../components/header/Header";
 import Skills from "../components/skills/Skills";
 import Experience from "../components/experience/Experience";
+import Education from "../components/education/Education";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <CallToAction />
       <Skills />
       <Experience />
+      <Education />
     </main>
   );
 }
