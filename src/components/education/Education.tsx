@@ -2,7 +2,7 @@ interface Props {}
 
 const Education: React.FC<Props> = () => {
   return (
-    <div className="w-full bg-primary3 shadow-inner py-14">
+    <div id="education" className="w-full bg-primary3 shadow-inner py-14">
       <h2 className="mb-16 text-center font-semibold text-4xl">Education</h2>
       <div className="px-4 md:px-8 mx-auto lg:max-w-7xl grid grid-cols-2 justify-items-center gap-5">
         <div className="flex">

@@ -8,7 +8,7 @@ interface Props {}
 const Experience: React.FC<Props> = () => {
   const [activeExp, setActiveExp] = useState<number>(0);
   return (
-    <div className="px-4 md:px-8 py-14 mx-auto lg:max-w-7xl ">
+    <div id="experience" className="px-4 md:px-8 py-14 mx-auto lg:max-w-7xl ">
       <h2 className="mb-16 text-center font-semibold text-4xl">Experience</h2>
       <div className="grid grid-cols-2">
         <div className="">

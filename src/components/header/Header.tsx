@@ -1,14 +1,49 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+
 import DarkModeButton from "../buttons/DarkModeButton";
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
+
+  const [currentSection, setCurrentSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "aboutme",
+        "skills",
+        "experience",
+        "education",
+        "projects",
+        "contact",
+      ];
+      let current = "";
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element && element.offsetTop <= window.scrollY + 200) {
+          current = section;
+        }
+      }
+      setCurrentSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const isActive = (section: string) => section === currentSection;
+
   return (
-    <div>
-      <nav className="w-full">
+    <div className="h-28">
+      <nav className="w-full fixed bg-primary1 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-8 md:gap-5 md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block md:col-span-1">
             <h2 className="text-2xl dark:text-white text-primary1 font-bold">
@@ -60,48 +95,60 @@ export default function Header() {
             <ul className="md:flex justify-between">
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#aboutme"
+                  className={`hover:text-secondary ${
+                    isActive("aboutme") && "text-secondary"
+                  }`}
                 >
                   About Me
                 </Link>
               </li>
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#skills"
+                  className={`hover:text-secondary ${
+                    isActive("skills") && "text-secondary"
+                  }`}
                 >
                   Skills
                 </Link>
               </li>
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#experience"
+                  className={`hover:text-secondary ${
+                    isActive("experience") && "text-secondary"
+                  }`}
                 >
                   Experience
                 </Link>
               </li>
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#education"
+                  className={`hover:text-secondary ${
+                    isActive("education") && "text-secondary"
+                  }`}
                 >
                   Education
                 </Link>
               </li>
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#projects"
+                  className={`hover:text-secondary ${
+                    isActive("projects") && "text-secondary"
+                  }`}
                 >
                   Projets
                 </Link>
               </li>
               <li className="dark:text-white my-10">
                 <Link
-                  href="/"
-                  className="hover:text-secondary active:text-secondary"
+                  href="#contact"
+                  className={`hover:text-secondary ${
+                    isActive("contact") && "text-secondary"
+                  }`}
                 >
                   Contact
                 </Link>
