@@ -26,8 +26,8 @@ const Form: React.FC<Props> = () => {
   };
 
   return (
-    <form className="w-full flex flex-col justify-between">
-      <div className="grid grid-cols-2 gap-3">
+    <form className="w-full h-full flex flex-col justify-between">
+      <div className="w-full flex flex-col justify-between md:grid md:grid-cols-2 md:gap-3">
         <Input
           type="text"
           value={name}

@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <div className="h-28">
-      <nav className="w-full fixed bg-primary1 z-10">
+      <nav className="w-full fixed bg-primary1 z-20">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-8 md:gap-5 md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block md:col-span-1">
             <h2 className="text-2xl dark:text-white text-primary1 font-bold">
@@ -152,9 +152,14 @@ export default function Header() {
                   Contact
                 </Link>
               </li>
+              <li className="dark:text-white my-10">
+                <div className="col-span-2 justify-self-end flex md:hidden">
+                  <DarkModeButton />
+                </div>
+              </li>
             </ul>
           </div>
-          <div className="col-span-2 justify-self-end">
+          <div className="col-span-2 justify-self-end hidden md:flex">
             <DarkModeButton />
           </div>
         </div>
