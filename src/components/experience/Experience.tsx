@@ -15,7 +15,7 @@ const Experience: React.FC<Props> = () => {
           {experience.map((exp, key) => (
             <div
               key={key}
-              className={`cursor-pointer border-2 border-secondary rounded-[33px] w-10/12 h-24 py-3 px-7  flex flex-col justify-between mb-5 ${
+              className={`cursor-pointer border-2 border-secondary rounded-[33px] w-10/12 h-24 py-3 px-7  flex flex-col justify-between mb-5 hover:bg-secondary hover:text-primary1 transition ease-in-out delay-100 ${
                 activeExp === exp.id
                   ? "bg-secondary text-primary1"
                   : " text-secondary"
