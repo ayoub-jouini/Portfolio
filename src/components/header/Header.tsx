@@ -45,9 +45,11 @@ export default function Header() {
       <nav className="w-full fixed bg-primary1 z-20">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-8 md:gap-5 md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block md:col-span-1">
-            <h2 className="text-2xl dark:text-white text-primary1 font-bold">
-              MAJ
-            </h2>
+            <Link href="/">
+              <h2 className="text-2xl dark:text-white text-primary1 font-bold">
+                MAJ
+              </h2>
+            </Link>
 
             <div className="md:hidden">
               <button

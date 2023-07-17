@@ -1,11 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import projects from "../../data/Projects";
+import Link from "next/link";
 
-interface Props {}
+interface Projects {
+  id: number;
+  title: string;
+  stack: string;
+  description: string;
+  images: string[];
+  organisation: string;
+}
 
-const Projects: React.FC<Props> = () => {
+interface Props {
+  projects: Projects[];
+}
+
+const Projects: React.FC<Props> = ({ projects }) => {
   const [nb, setNB] = useState<number>(2);
 
   const changeNumber = () => (nb === 2 ? setNB(100) : setNB(2));
@@ -27,17 +38,21 @@ const Projects: React.FC<Props> = () => {
                 key={key}
                 className="md:my-16 flex flex-col md:grid md:grid-cols-2 gap-3 mb-16"
               >
-                <div
+                <Link
+                  href={`${project.id}`}
                   style={{
                     backgroundImage: `url(/images/${project.images[0]})`,
                   }}
                   className="bg-cover bg-center rounded-[33px] h-96 w-11/12 hidden md:flex"
                 />
                 <div className="flex flex-col justify-between ">
-                  <h3 className="cursor-pointer hover:text-white text-secondary font-bold text-lg md:text-2xl md:text-left text-center my-2">
-                    {project.title}
-                  </h3>
-                  <div
+                  <Link href={`${project.id}`}>
+                    <h3 className="cursor-pointer hover:text-white text-secondary font-bold text-lg md:text-2xl md:text-left text-center my-2">
+                      {project.title}
+                    </h3>
+                  </Link>
+                  <Link
+                    href={`${project.id}`}
                     style={{
                       backgroundImage: `url(/images/${project.images[0]})`,
                     }}
@@ -47,14 +62,20 @@ const Projects: React.FC<Props> = () => {
                     {project.description}
                   </p>
                   <p className="text-base my-2">Stack: {project.stack}</p>
-                  <p className="cursor-pointer text-l text-secondary hover:text-white self-end my-2">
-                    See more
-                  </p>
-                  <img
-                    className="cursor-pointer h-5 self-end"
-                    alt=""
-                    src="/icons/arrow.svg"
-                  />
+                  <Link
+                    className="self-end flex items-center"
+                    href={`${project.id}`}
+                  >
+                    <p className="cursor-pointer text-l text-secondary hover:text-white  m-2">
+                      See more
+                    </p>
+
+                    <img
+                      className="cursor-pointer h-5"
+                      alt=""
+                      src="/icons/arrow.svg"
+                    />
+                  </Link>
                 </div>
               </div>
             ) : (
@@ -63,10 +84,13 @@ const Projects: React.FC<Props> = () => {
                 className="md:my-16 flex flex-col  md:grid md:grid-cols-2 gap-3 mb-16"
               >
                 <div className="flex flex-col justify-between ">
-                  <h3 className="cursor-pointer hover:text-white text-secondary font-bold text-lg md:text-2xl md:text-left text-center my-2">
-                    {project.title}
-                  </h3>
-                  <div
+                  <Link href={`${project.id}`}>
+                    <h3 className="cursor-pointer hover:text-white text-secondary font-bold text-lg md:text-2xl md:text-left text-center my-2">
+                      {project.title}
+                    </h3>
+                  </Link>
+                  <Link
+                    href={`${project.id}`}
                     style={{
                       backgroundImage: `url(/images/${project.images[0]})`,
                     }}
@@ -76,16 +100,24 @@ const Projects: React.FC<Props> = () => {
                     {project.description}
                   </p>
                   <p className="text-base my-2">Stack: {project.stack}</p>
-                  <p className="cursor-pointer text-l text-secondary hover:text-white self-end my-2">
-                    See more
-                  </p>
-                  <img
-                    className="cursor-pointer h-5 self-end"
-                    alt=""
-                    src="/icons/arrow.svg"
-                  />
+                  <Link
+                    className="self-end flex items-center"
+                    href={`${project.id}`}
+                  >
+                    <p className="cursor-pointer text-l text-secondary hover:text-white  m-2">
+                      See more
+                    </p>
+
+                    <img
+                      className="cursor-pointer h-5"
+                      alt=""
+                      src="/icons/arrow.svg"
+                    />
+                  </Link>
                 </div>
-                <div
+
+                <Link
+                  href={`${project.id}`}
                   style={{
                     backgroundImage: `url(/images/${project.images[0]})`,
                   }}
