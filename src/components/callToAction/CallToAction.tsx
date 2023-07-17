@@ -3,11 +3,18 @@
 import Link from "next/link";
 import Button from "../buttons/Button";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 interface Props {}
 
 const CallToAction: React.FC<Props> = () => {
+  const [mode, setMode] = useState<string>("dark");
   const { theme } = useTheme();
+
+  useEffect(() => {
+    theme === "light" ? setMode("light") : setMode("dark");
+  }, [theme]);
+
   return (
     <div
       id="aboutme"
@@ -36,7 +43,7 @@ const CallToAction: React.FC<Props> = () => {
           </div>
         </div>
       </div>
-      {theme === "dark" ? (
+      {mode === "dark" ? (
         <img
           alt="mohamed-ayoub-jouini"
           src="/images/me.png"

@@ -14,7 +14,7 @@ const DarkModeButton = () => {
     <div className="flex flex-row justify-between toggle">
       <label className="flex items-center cursor-pointer">
         <div className="mr-3 dark:text-white text-priborder-primary1 font-medium">
-          {theme === "dark" ? "Dark" : "Light"} Mode
+          {mode} Mode
         </div>
         <div className="relative">
           <input
