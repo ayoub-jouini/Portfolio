@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "FITTHINGZ",
-      "stack": "Next JS, Node JS, Express JS, MongoDB, TypeScript",
+      "stack": ["Next JS", "Node JS", "Express JS", "MongoDB", "TypeScript"],
       "description": "FitThingZ is a web application that connects all players in the world of sport, namely athletes and sports coaches. This application allows athletes to find coaches registered on the platform and to follow their physical progress and their diet. It also allows coaches to manage their profile, manage their clients, provide them with exercises and a personalized diet, and add physical exercises to the platform.",
       "images": [
         "fitthingz1.jpg",
@@ -18,7 +18,7 @@
     {
       "id": 1,
       "title": "BookApp",
-      "stack": "React Native,Firebase",
+      "stack": ["React Native", "Firebase"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet fugit necessitatibus voluptatum praesentium. Iusto, a! Odit eum excepturi, veniam itaque eaque exercitationem magnam ratione cupiditate pariatur tempore consectetur ab!",
       "images": [
         "bookapp1.jpg",
@@ -33,7 +33,7 @@
     {
       "id": 2,
       "title": "Art-Form",
-      "stack": "Next JS,Express JS,Node JS,TypeScript,graphQL",
+      "stack": ["Next JS", "Express JS", "Node JS", "TypeScript", "graphQL"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet fugit necessitatibus voluptatum praesentium. Iusto, a! Odit eum excepturi, veniam itaque eaque exercitationem magnam ratione cupiditate pariatur tempore consectetur ab!",
       "images": ["artform1.jpg", "artform2.jpg", "artform3.jpg"],
       "role": "front-end developer",
@@ -42,7 +42,7 @@
     {
       "id": 3,
       "title": "AutoPricing",
-      "stack": "React JS,Express JS,Node JS,MongoDB",
+      "stack": ["React JS", "Express JS", "Node JS", "MongoDB"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet fugit necessitatibus voluptatum praesentium. Iusto, a! Odit eum excepturi, veniam itaque eaque exercitationem magnam ratione cupiditate pariatur tempore consectetur ab!",
       "images": ["autopricing1.jpg", "autopricing2.jpg", "autopricing3.jpg"],
       "role": "Fullstack developer",
@@ -51,7 +51,7 @@
     {
       "id": 4,
       "title": "HR Platform",
-      "stack": "React JS,Express JS,Node JS,Postgress,TypeScript",
+      "stack": ["React JS", "Express JS", "Node JS", "Postgress", "TypeScript"],
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet fugit necessitatibus voluptatum praesentium. Iusto, a! Odit eum excepturi, veniam itaque eaque exercitationem magnam ratione cupiditate pariatur tempore consectetur ab!",
       "images": [
         "hrplatform1.jpg",

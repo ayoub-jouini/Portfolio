@@ -7,7 +7,7 @@ import Link from "next/link";
 interface Projects {
   id: number;
   title: string;
-  stack: string;
+  stack: string[];
   description: string;
   images: string[];
   organisation: string;
@@ -69,7 +69,12 @@ const Projects: React.FC<Props> = ({ projects }) => {
                   <p className="text-base md:text-xl text-justify my-2">
                     {project.description}
                   </p>
-                  <p className="text-base my-2">Stack: {project.stack}</p>
+                  <p className="text-base my-2">
+                    Stack:
+                    {project.stack.map(
+                      (stk: string, key: any) => " " + stk + ","
+                    )}
+                  </p>
                   <Link
                     className="self-end flex items-center"
                     href={`${project.id}`}
@@ -114,7 +119,12 @@ const Projects: React.FC<Props> = ({ projects }) => {
                   <p className="text-base md:text-xl text-justify my-2">
                     {project.description}
                   </p>
-                  <p className="text-base my-2">Stack: {project.stack}</p>
+                  <p className="text-base my-2">
+                    Stack:
+                    {project.stack.map(
+                      (stk: string, key: any) => " " + stk + ","
+                    )}
+                  </p>
                   <Link
                     className="self-end flex items-center"
                     href={`${project.id}`}
