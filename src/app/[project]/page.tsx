@@ -4,12 +4,12 @@ import ProjectCarousel from "../../components/projectCarousel/ProjectCarousel";
 
 const getData = async (nb: number | string) => {
   let res;
-  if (Number.isNaN(nb)) throw new Error("Failed to fetch data");
+  if (Number.isNaN(nb)) res = null;
   try {
     res = await axios.get(`${process.env.MYURL}/data/projects.json`);
-    if (!res?.data.projects[nb]) throw new Error("Failed to fetch data");
+    if (!res?.data.projects[nb]) res = null;
   } catch (err) {
-    throw new Error("Failed to fetch data" + err);
+    res = null;
   }
 
   return res?.data.projects[nb];

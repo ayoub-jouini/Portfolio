@@ -10,9 +10,9 @@ const getData = async () => {
   let res = null;
   try {
     res = await axios.get(`${process.env.MYURL}/data/projects.json`);
-    if (!res?.data) throw new Error("Failed to fetch data");
+    if (!res?.data) res = null;
   } catch (err) {
-    throw new Error("Failed to fetch data");
+    res = null;
   }
 
   return res;
