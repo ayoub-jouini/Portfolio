@@ -33,6 +33,6 @@ export async function POST(request: Request) {
       return NextResponse.json({ message: "done!" });
     }
   } catch (err) {
-    console.log(err);
+    throw new Error(`Failed to fetch posts, received status `);
   }
 }
