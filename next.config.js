@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  staticPageGenerationTimeout: 120,
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/": { page: "/" },
+      "/[project]": { page: "/[project]" },
+    };
+  },
 };
 
 module.exports = nextConfig;
