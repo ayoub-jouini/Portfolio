@@ -5,22 +5,24 @@ import ProjectCarousel from "../../components/projectCarousel/ProjectCarousel";
 const getData = async (nb: number) => {
   let res;
   try {
-    res = await axios.get(`${process.env.MYURL}/data/Projects.json`);
+    res = await axios.get(`${process.env.MYURL}/data/Projects.json`).catch();
   } catch (err) {
-    console.log(err);
+    throw new Error("Failed to fetch data");
   }
 
   return res?.data.projects[nb] || null;
 };
 
-export function generateStaticParams() {
-  return [
-    { project: "0" },
-    { project: "1" },
-    { project: "2" },
-    { project: "3" },
-    { project: "4" },
+export async function getStaticPaths() {
+  const paths = [
+    { params: { project: "0" } },
+    { params: { project: "1" } },
+    { params: { project: "2" } },
+    { params: { project: "3" } },
+    { params: { project: "4" } },
   ];
+
+  return { paths, fallback: false };
 }
 
 export default async function Project({ params }: { params: any }) {

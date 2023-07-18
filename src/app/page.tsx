@@ -11,7 +11,7 @@ const getData = async () => {
   try {
     res = await axios.get(`${process.env.MYURL}/data/Projects.json`);
   } catch (err) {
-    console.log(err);
+    throw new Error("Failed to fetch data");
   }
 
   return res?.data.projects;
