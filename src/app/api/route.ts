@@ -2,15 +2,15 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import validator from "validator";
 
-const transporter = nodemailer.createTransport({
-  service: "Gmail",
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-});
-
 export async function POST(request: Request) {
+  const transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  });
+
   const data = await request.json();
 
   try {
