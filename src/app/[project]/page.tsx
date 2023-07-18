@@ -1,4 +1,5 @@
 import axios from "axios";
+import { GetStaticPaths } from "next";
 
 import ProjectCarousel from "../../components/projectCarousel/ProjectCarousel";
 
@@ -13,7 +14,7 @@ const getData = async (nb: number) => {
   return res?.data.projects[nb] || null;
 };
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = [
     { params: { project: "0" } },
     { params: { project: "1" } },
@@ -23,7 +24,7 @@ export async function getStaticPaths() {
   ];
 
   return { paths, fallback: false };
-}
+};
 
 export default async function Project({ params }: { params: any }) {
   const project = await getData(Number(params.project));
