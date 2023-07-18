@@ -26,7 +26,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-export default async function Project({ params }: { params: any }) {
+export default async function Project({
+  params,
+}: {
+  params: { project: string };
+}) {
   const project = await getData(Number(params.project));
   return (
     <>
