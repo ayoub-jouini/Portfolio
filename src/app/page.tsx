@@ -9,7 +9,7 @@ import Projects from "../components/projects/Projects";
 const getData = async () => {
   let res = null;
   try {
-    res = await axios.get(`${process.env.MYURL}/data/Projects.json`);
+    res = await axios.get(`${process.env.MYURL}/data/projects.json`);
     if (!res?.data) throw new Error("Failed to fetch data");
   } catch (err) {
     throw new Error("Failed to fetch data");
@@ -27,7 +27,9 @@ export default async function Home() {
       <Skills />
       <Experience />
       <Education />
-      {projects.data.projects && <Projects projects={projects.data.projects} />}
+      {projects && projects.data.projects && (
+        <Projects projects={projects.data.projects} />
+      )}
     </main>
   );
 }
