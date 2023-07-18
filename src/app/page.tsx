@@ -27,9 +27,7 @@ export default async function Home() {
       <Skills />
       <Experience />
       <Education />
-      {projects && projects.data.projects && (
-        <Projects projects={projects.data.projects} />
-      )}
+      {projects && <Projects projects={projects.data.projects} />}
     </main>
   );
 }
