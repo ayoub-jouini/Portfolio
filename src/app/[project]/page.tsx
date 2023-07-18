@@ -7,7 +7,6 @@ const getData = async (nb: number | string) => {
   if (Number.isNaN(nb)) res = null;
   try {
     res = await axios.get(`${process.env.MYURL}/data/projects.json`);
-    if (!res?.data.projects[nb]) res = null;
   } catch (err) {
     res = null;
   }

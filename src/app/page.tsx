@@ -7,10 +7,9 @@ import Education from "../components/education/Education";
 import Projects from "../components/projects/Projects";
 
 const getData = async () => {
-  let res = null;
+  let res;
   try {
     res = await axios.get(`${process.env.MYURL}/data/projects.json`);
-    if (!res?.data) res = null;
   } catch (err) {
     res = null;
   }
