@@ -5,12 +5,13 @@ import ProjectCarousel from "../../components/projectCarousel/ProjectCarousel";
 const getData = async (nb: number) => {
   let res;
   try {
-    res = await axios.get(`${process.env.MYURL}/data/Projects.json`).catch();
+    res = await axios.get(`${process.env.MYURL}/data/Projects.json`);
+    if (!res?.data.projects[nb]) throw new Error("Failed to fetch data");
   } catch (err) {
     throw new Error("Failed to fetch data");
   }
 
-  return res?.data.projects[nb] || null;
+  return res?.data.projects[nb];
 };
 
 export default async function Project({
