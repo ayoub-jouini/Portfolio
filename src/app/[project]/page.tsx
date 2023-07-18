@@ -13,6 +13,16 @@ const getData = async (nb: number) => {
   return res?.data.projects[nb] || null;
 };
 
+export function generateStaticParams() {
+  return [
+    { project: "0" },
+    { project: "1" },
+    { project: "2" },
+    { project: "3" },
+    { project: "4" },
+  ];
+}
+
 export default async function Project({ params }: { params: any }) {
   const project = await getData(Number(params.project));
   return (
