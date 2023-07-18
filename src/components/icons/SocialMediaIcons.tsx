@@ -15,7 +15,11 @@ const SocialMediaIcons: React.FC<Props> = () => {
   }, [theme]);
   return (
     <div className="flex mt-7 md:mt-3 md:justify-start justify-center">
-      <Link href="https://www.facebook.com/ayoub.jouini.79" target="_blank">
+      <Link
+        href="https://www.facebook.com/ayoub.jouini.79"
+        target="_blank"
+        rel="noreferrer"
+      >
         {mode === "light" ? (
           <img alt="" src="/icons/facebookicon.svg" className="mr-3" />
         ) : (
@@ -25,6 +29,7 @@ const SocialMediaIcons: React.FC<Props> = () => {
       <Link
         href="https://www.linkedin.com/in/mohamed-ayoub-jouini-254152205/"
         target="_blank"
+        rel="noreferrer"
       >
         {mode === "light" ? (
           <img alt="" src="/icons/linkedinicon.svg" className="mr-3" />
@@ -32,7 +37,11 @@ const SocialMediaIcons: React.FC<Props> = () => {
           <img alt="" src="/icons/linkedinicon.svg" className="mr-3" />
         )}
       </Link>
-      <Link href="https://github.com/ayoub-jouini" target="_blank">
+      <Link
+        href="https://github.com/ayoub-jouini"
+        target="_blank"
+        rel="noreferrer"
+      >
         {mode === "light" ? (
           <img alt="" src="/icons/githubicon.svg" className="mr-3" />
         ) : (
