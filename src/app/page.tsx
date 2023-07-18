@@ -27,7 +27,7 @@ export default async function Home() {
       <Skills />
       <Experience />
       <Education />
-      <Projects projects={projects} />
+      {projects && <Projects projects={projects} />}
     </main>
   );
 }
