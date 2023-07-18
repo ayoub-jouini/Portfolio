@@ -10,12 +10,13 @@ const ProjectCarousel: React.FC<Props> = ({ images }) => {
   return (
     <Carousel className="rounded-xl">
       {images.map((image, key) => (
-        <img
-          key={key}
-          src={`/images/${image}`}
-          alt={image}
-          className="h-full w-full object-cover"
-        />
+        <div key={key} className="flex justify-center items-center">
+          <img
+            src={`/images/${image}`}
+            alt={image}
+            className="object-contain"
+          />
+        </div>
       ))}
     </Carousel>
   );

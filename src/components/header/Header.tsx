@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <div className="h-28">
-      <nav className="w-full fixed bg-primary1 z-20">
+      <nav className="w-full fixed bg-white1 dark:bg-primary1 z-20">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-8 md:gap-5 md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block md:col-span-1">
             <Link href="/">
@@ -59,7 +59,7 @@ export default function Header() {
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 dark:text-white text-primary1"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -72,7 +72,7 @@ export default function Header() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-white"
+                    className="w-6 h-6 dark:text-white text-primary1"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -97,8 +97,8 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#aboutme"
-                  className={`hover:text-secondary ${
-                    isActive("aboutme") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("aboutme") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   About Me
@@ -107,8 +107,8 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#skills"
-                  className={`hover:text-secondary ${
-                    isActive("skills") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("skills") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Skills
@@ -117,8 +117,9 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#experience"
-                  className={`hover:text-secondary ${
-                    isActive("experience") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("experience") &&
+                    "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Experience
@@ -127,8 +128,8 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#education"
-                  className={`hover:text-secondary ${
-                    isActive("education") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("education") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Education
@@ -137,8 +138,8 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#projects"
-                  className={`hover:text-secondary ${
-                    isActive("projects") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("projects") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Projets
@@ -147,8 +148,8 @@ export default function Header() {
               <li className="dark:text-white my-10">
                 <Link
                   href="#contact"
-                  className={`hover:text-secondary ${
-                    isActive("contact") && "text-secondary"
+                  className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
+                    isActive("contact") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Contact

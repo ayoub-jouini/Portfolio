@@ -6,6 +6,7 @@ import validator from "validator";
 
 import Input from "../input/Input";
 import TextArea from "../input/TextArea";
+import ContactIcon from "../icons/ContactIcon";
 
 interface Props {}
 
@@ -127,21 +128,23 @@ const Form: React.FC<Props> = () => {
         <button
           type="submit"
           onSubmit={handleSubmit}
-          className="flex border-2 border-secondary rounded-[16px] justify-between items-center h-12 w-52 my-3 mr-3"
+          className="flex border-2 border-tertiary dark:border-secondary rounded-[16px] justify-between items-center h-12 w-52 my-3 mr-3"
         >
           <p className="justify-self-center ml-5">Send Message</p>
-          <div className="bg-secondary h-12 w-12 flex justify-center items-center rounded-[16px]">
-            <img className="" alt="send" src="/icons/send.svg" />
+          <div className="bg-tertiary dark:bg-secondary h-12 w-12 flex justify-center items-center rounded-[16px]">
+            <ContactIcon name="send" />
           </div>
         </button>
         {isLoading && (
           <div
-            className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent border-t-secondary border-b-secondary border-l-secondary align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+            className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent dark:border-t-secondary border-t-tertiary dark:border-b-secondary border-b-tertiary dark:border-l-secondary border-l-tertiary align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
             role="status"
           />
         )}
         {isSuccess && (
-          <div className="text-secondary">Email sent successfully!</div>
+          <div className="text-tertiary dark:text-secondary">
+            Email sent successfully!
+          </div>
         )}
         {isError && (
           <div className="text-red-300">

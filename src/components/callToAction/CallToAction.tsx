@@ -21,9 +21,12 @@ const CallToAction: React.FC<Props> = () => {
       className="px-4 md:px-8 mx-auto lg:max-w-7xl md:grid flex flex-col md:gap-5 md:grid-cols-2 items-center overflow-hidden"
     >
       <div className="z-10">
-        <h1 className="font-semibold text-xl md:text-4xl text-secondary">
-          I am a Software Developer
+        <h1 className="font-medium text-lg md:text-2xl dark:text-white text-primary1">
+          MOHAMED AYOUB JOUINI
         </h1>
+        <h2 className="font-semibold text-2xl md:text-5xl text-tertiary dark:text-secondary">
+          SOFTWARE DEVELOPER
+        </h2>
         <p className="text-sm md:text-xl my-8 md:my-16">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat
           nostrum quae assumenda laudantium fuga possimus, vel quia, porro quos
