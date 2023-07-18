@@ -5,7 +5,7 @@ import ProjectCarousel from "../../components/projectCarousel/ProjectCarousel";
 const getData = async () => {
   let res;
   try {
-    res = await axios.get(`${process.env.URL}/data/Projects.json`);
+    res = await axios.get(`${process.env.MYURL}/data/Projects.json`);
   } catch (err) {
     console.log(err);
   }
