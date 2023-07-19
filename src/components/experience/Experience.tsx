@@ -12,7 +12,7 @@ const Experience: React.FC<Props> = () => {
       <h2 className="mb-8 md:mb-16 text-center font-semibold text-2xl md:text-4xl text-primary1 dark:text-white1">
         Experience
       </h2>
-      <div className="flex flex-col md:grid md:grid-cols-2">
+      <div className="flex flex-col md:grid md:grid-cols-2 md:items-start">
         <div className="flex overflow-x-scroll scrollbar-hide md:overflow-visible md:block">
           {experience.map((exp, key) => (
             <div

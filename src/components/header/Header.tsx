@@ -43,12 +43,19 @@ export default function Header() {
   return (
     <div className="h-28">
       <nav className="w-full fixed bg-white1 dark:bg-primary1 z-20">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-8 md:gap-5 md:px-8">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block md:col-span-1">
-            <Link href="/">
-              <h2 className="text-2xl dark:text-white text-primary1 font-bold">
-                MAJ
-              </h2>
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:grid md:grid-cols-12 md:gap-5 md:px-8">
+          <div className="flex items-end justify-between py-3 md:py-5 md:block md:col-span-2">
+            <Link href="/" className="">
+              <img
+                alt="logolight"
+                src="/icons/logolight.svg"
+                className="dark:hidden w-24 md:w-40"
+              />
+              <img
+                alt="logolight"
+                src="/icons/logo.svg"
+                className="dark:flex hidden w-24 md:w-40"
+              />
             </Link>
 
             <div className="md:hidden">
@@ -89,12 +96,15 @@ export default function Header() {
             </div>
           </div>
           <div
-            className={`pb-3 mt-8 md:block md:col-span-5 md:pb-0 md:mt-0 ${
+            className={`pb-3 mt-8 md:block md:col-span-8 md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="md:flex justify-between">
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#aboutme"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
@@ -104,7 +114,10 @@ export default function Header() {
                   About Me
                 </a>
               </li>
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#skills"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
@@ -114,7 +127,10 @@ export default function Header() {
                   Skills
                 </a>
               </li>
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#experience"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
@@ -125,7 +141,10 @@ export default function Header() {
                   Experience
                 </a>
               </li>
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#education"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
@@ -135,7 +154,10 @@ export default function Header() {
                   Education
                 </a>
               </li>
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#projects"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
@@ -145,7 +167,10 @@ export default function Header() {
                   Projets
                 </a>
               </li>
-              <li className="dark:text-white my-10">
+              <li
+                onClick={() => setNavbar(false)}
+                className="dark:text-white my-10"
+              >
                 <a
                   href="#contact"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${

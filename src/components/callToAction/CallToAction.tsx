@@ -27,10 +27,10 @@ const CallToAction: React.FC<Props> = () => {
           SOFTWARE DEVELOPER
         </h2>
         <p className="text-sm md:text-xl my-8 md:my-16">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat
-          nostrum quae assumenda laudantium fuga possimus, vel quia, porro quos
-          pariatur quaerat harum enim earum exercitationem culpa. Perspiciatis,
-          enim maiores!
+          A Software developer with a love for coming up with practical answers.
+          knowledgeable with a variety of programming languages and
+          technologies. devoted to producing high-quality results and
+          productively working with cross-functional teams.
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="">
@@ -49,13 +49,13 @@ const CallToAction: React.FC<Props> = () => {
         <img
           alt="mohamed-ayoub-jouini"
           src="/images/me.png"
-          className="h-64 md:h-full -mt-36 ml-40  md:m-0"
+          className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0"
         />
       ) : (
         <img
           alt="mohamed-ayoub-jouini"
           src="/images/melight.png"
-          className="h-64 md:h-full -mt-36 ml-40  md:m-0 "
+          className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0 "
         />
       )}
     </div>

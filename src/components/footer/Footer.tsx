@@ -19,10 +19,9 @@ const Footer: React.FC<Props> = () => {
             Contact me
           </h3>
           <p className="text-sm md:text-base my-5 text-justify text-primary1 dark:text-white1">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
-            recusandae quos rem nobis voluptates vel sequi corporis tenetur
-            soluta aliquam dignissimos, consectetur nemo dolor, optio voluptas.
-            Suscipit dolorum a consequuntur?
+            Feel free to reach out to me to discuss potential opportunities or
+            collaborations. I am eager to hear from you and explore how we can
+            create innovative solutions together.
           </p>
           <div className="h-full w-full flex md:hidden">
             <Form />

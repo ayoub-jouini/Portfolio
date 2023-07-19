@@ -21,7 +21,7 @@ const SocialMediaIcons: React.FC<Props> = () => {
         rel="noreferrer"
       >
         {mode === "light" ? (
-          <img alt="" src="/icons/facebookicon.svg" className="mr-3" />
+          <img alt="" src="/icons/facebookiconlight.svg" className="mr-3" />
         ) : (
           <img alt="" src="/icons/facebookicon.svg" className="mr-3" />
         )}
@@ -32,7 +32,7 @@ const SocialMediaIcons: React.FC<Props> = () => {
         rel="noreferrer"
       >
         {mode === "light" ? (
-          <img alt="" src="/icons/linkedinicon.svg" className="mr-3" />
+          <img alt="" src="/icons/linkediniconlight.svg" className="mr-3" />
         ) : (
           <img alt="" src="/icons/linkedinicon.svg" className="mr-3" />
         )}
@@ -43,7 +43,7 @@ const SocialMediaIcons: React.FC<Props> = () => {
         rel="noreferrer"
       >
         {mode === "light" ? (
-          <img alt="" src="/icons/githubicon.svg" className="mr-3" />
+          <img alt="" src="/icons/githubiconlight.svg" className="mr-3" />
         ) : (
           <img alt="" src="/icons/githubicon.svg" className="mr-3" />
         )}
