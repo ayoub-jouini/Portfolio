@@ -164,7 +164,7 @@ export default function Header() {
                     isActive("projects") && "text-tertiary dark:text-secondary"
                   }`}
                 >
-                  Projets
+                  Projects
                 </a>
               </li>
               <li
