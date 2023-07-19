@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 
 const DarkModeButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mode, setMode] = useState<string>("Dark");
+  const [mode, setMode] = useState<string>("Light");
 
   useEffect(() => {
     theme === "light" ? setMode("Light") : setMode("Dark");

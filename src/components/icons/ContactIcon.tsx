@@ -9,7 +9,7 @@ interface Props {
 }
 
 const ContactIcon: React.FC<Props> = ({ name }) => {
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
   const { theme } = useTheme();
 
   useEffect(() => {

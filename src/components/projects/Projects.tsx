@@ -22,7 +22,7 @@ const Projects: React.FC<Props> = ({ projects }) => {
 
   const changeNumber = () => (nb === 2 ? setNB(100) : setNB(2));
 
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
   const { theme } = useTheme();
 
   useEffect(() => {

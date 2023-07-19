@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 interface Props {}
 
 const SocialMediaIcons: React.FC<Props> = () => {
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
   const { theme } = useTheme();
 
   useEffect(() => {

@@ -95,27 +95,27 @@ export default function Header() {
           >
             <ul className="md:flex justify-between">
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#aboutme"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("aboutme") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   About Me
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#skills"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("skills") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Skills
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#experience"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("experience") &&
@@ -123,37 +123,37 @@ export default function Header() {
                   }`}
                 >
                   Experience
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#education"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("education") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Education
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#projects"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("projects") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Projets
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
-                <Link
+                <a
                   href="#contact"
                   className={`hover:text-tertiary dark:hover:text-secondary font-semibold ${
                     isActive("contact") && "text-tertiary dark:text-secondary"
                   }`}
                 >
                   Contact
-                </Link>
+                </a>
               </li>
               <li className="dark:text-white my-10">
                 <div className="col-span-2 justify-self-end flex md:hidden">

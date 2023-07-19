@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Button from "../buttons/Button";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -8,7 +7,7 @@ import { useEffect, useState } from "react";
 interface Props {}
 
 const CallToAction: React.FC<Props> = () => {
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -35,14 +34,14 @@ const CallToAction: React.FC<Props> = () => {
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="">
-            <Link href="#projects">
+            <a href="#projects">
               <Button title="See Project" />
-            </Link>
+            </a>
           </div>
           <div className="md:mx-5 mt-5 md:mt-0">
-            <Link href="#contact">
+            <a href="#contact">
               <Button title="Contact Me" style="outlined" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

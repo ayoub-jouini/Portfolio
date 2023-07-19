@@ -8,7 +8,7 @@ interface Props {
 }
 
 const SkillIcon: React.FC<Props> = ({ skill }) => {
-  const [mode, setMode] = useState<string>("dark");
+  const [mode, setMode] = useState<string>("light");
   const { theme } = useTheme();
 
   useEffect(() => {
