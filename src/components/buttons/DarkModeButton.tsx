@@ -1,20 +1,17 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React from "react";
 import { useTheme } from "next-themes";
 
 const DarkModeButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mode, setMode] = useState<string>("Light");
-
-  useEffect(() => {
-    theme === "light" ? setMode("Light") : setMode("Dark");
-  }, [theme, setTheme]);
 
   return (
     <div className="flex flex-row justify-between toggle">
       <label className="flex items-center cursor-pointer">
         <div className="mr-3 dark:text-white text-tertiary border-tertiary font-medium">
-          {mode} Mode
+          <p className="inline dark:hidden">Light</p>
+          <p className="dark:inline hidden">Dark</p> Mode
         </div>
         <div className="relative">
           <input

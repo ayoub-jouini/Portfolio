@@ -1,19 +1,8 @@
-"use client";
-
 import Button from "../buttons/Button";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 interface Props {}
 
 const CallToAction: React.FC<Props> = () => {
-  const [mode, setMode] = useState<string>("light");
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    theme === "light" ? setMode("light") : setMode("dark");
-  }, [theme]);
-
   return (
     <div
       id="aboutme"
@@ -45,19 +34,16 @@ const CallToAction: React.FC<Props> = () => {
           </div>
         </div>
       </div>
-      {mode === "dark" ? (
-        <img
-          alt="mohamed-ayoub-jouini"
-          src="/images/me.png"
-          className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0"
-        />
-      ) : (
-        <img
-          alt="mohamed-ayoub-jouini"
-          src="/images/melight.png"
-          className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0 "
-        />
-      )}
+      <img
+        alt="mohamed-ayoub-jouini"
+        src="/images/me.png"
+        className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0 hidden dark:flex"
+      />
+      <img
+        alt="mohamed-ayoub-jouini"
+        src="/images/melight.png"
+        className="h-64 md:h-full object-cover -mt-36 ml-40  md:m-0 dark:hidden flex"
+      />
     </div>
   );
 };

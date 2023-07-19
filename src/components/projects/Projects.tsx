@@ -1,7 +1,6 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 interface Projects {
@@ -21,13 +20,6 @@ const Projects: React.FC<Props> = ({ projects }) => {
   const [nb, setNB] = useState<number>(2);
 
   const changeNumber = () => (nb === 2 ? setNB(100) : setNB(2));
-
-  const [mode, setMode] = useState<string>("light");
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    theme === "light" ? setMode("light") : setMode("dark");
-  }, [theme]);
 
   return (
     <div
@@ -82,19 +74,16 @@ const Projects: React.FC<Props> = ({ projects }) => {
                     <p className="cursor-pointer text-l hover:text-primary1 dark:hover:text-white dark:text-secondary text-tertiary  m-2">
                       See more
                     </p>
-                    {mode === "light" ? (
-                      <img
-                        className="cursor-pointer h-5"
-                        alt=""
-                        src="/icons/arrowlight.svg"
-                      />
-                    ) : (
-                      <img
-                        className="cursor-pointer h-5"
-                        alt=""
-                        src="/icons/arrow.svg"
-                      />
-                    )}
+                    <img
+                      className="cursor-pointer h-5 dark:hidden flex"
+                      alt=""
+                      src="/icons/arrowlight.svg"
+                    />
+                    <img
+                      className="cursor-pointer h-5 dark:flex hidden"
+                      alt=""
+                      src="/icons/arrow.svg"
+                    />
                   </Link>
                 </div>
               </div>
@@ -133,19 +122,16 @@ const Projects: React.FC<Props> = ({ projects }) => {
                       See more
                     </p>
 
-                    {mode === "light" ? (
-                      <img
-                        className="cursor-pointer h-5"
-                        alt=""
-                        src="/icons/arrowlight.svg"
-                      />
-                    ) : (
-                      <img
-                        className="cursor-pointer h-5"
-                        alt=""
-                        src="/icons/arrow.svg"
-                      />
-                    )}
+                    <img
+                      className="cursor-pointer h-5 dark:hidden flex"
+                      alt=""
+                      src="/icons/arrowlight.svg"
+                    />
+                    <img
+                      className="cursor-pointer h-5 dark:flex hidden"
+                      alt=""
+                      src="/icons/arrow.svg"
+                    />
                   </Link>
                 </div>
 
@@ -165,23 +151,20 @@ const Projects: React.FC<Props> = ({ projects }) => {
         onClick={changeNumber}
       >
         <p className="">{nb === 2 ? "See More" : "See Less"}</p>
-        {mode === "light" ? (
-          <img
-            className={`cursor-pointer h-5 self-end ${
-              nb === 2 ? "rotate-90" : "-rotate-90"
-            }`}
-            alt=""
-            src="/icons/arrowlight.svg"
-          />
-        ) : (
-          <img
-            className={`cursor-pointer h-5 self-end ${
-              nb === 2 ? "rotate-90" : "-rotate-90"
-            }`}
-            alt=""
-            src="/icons/arrow.svg"
-          />
-        )}
+        <img
+          className={`cursor-pointer h-5 self-end dark:hidden flex ${
+            nb === 2 ? "rotate-90" : "-rotate-90"
+          }`}
+          alt=""
+          src="/icons/arrowlight.svg"
+        />
+        <img
+          className={`cursor-pointer h-5 self-end dark:flex hidden ${
+            nb === 2 ? "rotate-90" : "-rotate-90"
+          }`}
+          alt=""
+          src="/icons/arrow.svg"
+        />
       </div>
     </div>
   );

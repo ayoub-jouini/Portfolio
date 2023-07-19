@@ -25,13 +25,3 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-.filter-primary {
-  filter: invert(99%) sepia(5%) saturate(357%) hue-rotate(202deg)
-    brightness(114%) contrast(87%);
-}
-
-.education-primary {
-  filter: invert(19%) sepia(79%) saturate(2061%) hue-rotate(241deg)
-    brightness(100%) contrast(117%);
-}

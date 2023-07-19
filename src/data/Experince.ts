@@ -72,7 +72,7 @@ const experience = [
     title: "Front-end Developer",
     organisation: "Sté Qramer",
     date: "jul 2022-aug 2022",
-    description: `During my internship with Ste Qrumer as a frontend developer, 
+    description: `During my internship with Sté Qramer as a frontend developer, 
     I had an experience working on an e-learning and social media platform. 
     The platform was made to make it easier for professors to teach while also helping students 
     find the courses they required.
