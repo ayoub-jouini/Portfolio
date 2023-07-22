@@ -17,6 +17,39 @@
     },
     {
       "id": 1,
+      "title": "AutoPricing",
+      "stack": ["React JS", "Express JS", "Node JS", "MongoDB"],
+      "description": "A Platform created to speed up commercial project estimating during client talks. Users can enter project specifics into Autopricing, such as the scope, deliverables, and timelines, and the platform's cutting-edge algorithms will produce accurate price estimates.This reduces the need for drawn-out and frequently arbitrary price negotiations.",
+      "images": ["autopricing1.jpg", "autopricing2.jpg", "autopricing3.jpg"],
+      "role": "Fullstack developer",
+      "organisation": "Orenda JE"
+    },
+    {
+      "id": 2,
+      "title": "HR Platform",
+      "stack": ["React JS", "Express JS", "Node JS", "Postgress", "TypeScript"],
+      "description": "A platform made to help HR managers manage their workforce more effectively, plan team-building exercises, and lead workshops and training sessions.HR managers may easily organize and carry out team-building exercises that promote cooperation and members engagement using HRPlatform.",
+      "images": [
+        "hrplatform1.jpg",
+        "hrplatform2.jpg",
+        "hrplatform3.jpg",
+        "hrplatform4.jpg"
+      ],
+      "role": "FullStack developer",
+      "organisation": "Orenda JE"
+    },
+
+    {
+      "id": 3,
+      "title": "Art-Form",
+      "stack": ["Next JS", "Express JS", "Node JS", "TypeScript", "graphQL"],
+      "description": "A Platform that links artists, production companies, and art enthusiasts to facilitate collaboration and the smooth sale of works of art. ArtForm offers a vibrant setting where artists may display their abilities and be seen by a wide range of people. To realize their artistic concepts, production companies can find and work with outstanding artists with ease.",
+      "images": ["artform1.jpg", "artform2.jpg", "artform3.jpg"],
+      "role": "front-end developer",
+      "organisation": "Art-Form"
+    },
+    {
+      "id": 4,
       "title": "BookApp",
       "stack": ["React Native", "Firebase"],
       "description": "A smartphone application made to make locating and buying books easier. With BookApp, users can quickly and easily discover a huge selection of titles and genres. Users may search for specific books, view suggestions, and find new releases using the app's user-friendly layout.",
@@ -27,40 +60,8 @@
         "bookapp4.jpg",
         "bookapp5.jpg"
       ],
-      "role": "Mobile developer",
-      "organisation": ""
-    },
-    {
-      "id": 2,
-      "title": "Art-Form",
-      "stack": ["Next JS", "Express JS", "Node JS", "TypeScript", "graphQL"],
-      "description": "A Platform that links artists, production companies, and art enthusiasts to facilitate collaboration and the smooth sale of works of art. ArtForm offers a vibrant setting where artists may display their abilities and be seen by a wide range of people. To realize their artistic concepts, production companies can find and work with outstanding artists with ease.",
-      "images": ["artform1.jpg", "artform2.jpg", "artform3.jpg"],
       "role": "front-end developer",
-      "organisation": "Art-Form"
-    },
-    {
-      "id": 3,
-      "title": "AutoPricing",
-      "stack": ["React JS", "Express JS", "Node JS", "MongoDB"],
-      "description": "A Platform created to speed up commercial project estimating during client talks. Users can enter project specifics into Autopricing, such as the scope, deliverables, and timelines, and the platform's cutting-edge algorithms will produce accurate price estimates.This reduces the need for drawn-out and frequently arbitrary price negotiations.",
-      "images": ["autopricing1.jpg", "autopricing2.jpg", "autopricing3.jpg"],
-      "role": "Fullstack developer",
-      "organisation": "Orenda JE"
-    },
-    {
-      "id": 4,
-      "title": "HR Platform",
-      "stack": ["React JS", "Express JS", "Node JS", "Postgress", "TypeScript"],
-      "description": "A platform made to help HR managers manage their workforce more effectively, plan team-building exercises, and lead workshops and training sessions.HR managers may easily organize and carry out team-building exercises that promote cooperation and members engagement using HRPlatform.",
-      "images": [
-        "hrplatform1.jpg",
-        "hrplatform2.jpg",
-        "hrplatform3.jpg",
-        "hrplatform4.jpg"
-      ],
-      "role": "Scrum Master",
-      "organisation": "Orenda JE"
+      "organisation": ""
     }
   ]
 }

@@ -16,10 +16,10 @@ const CallToAction: React.FC<Props> = () => {
           SOFTWARE DEVELOPER
         </h2>
         <p className="text-sm md:text-xl my-8 md:my-16">
-          A Software developer with a love for coming up with practical answers.
-          knowledgeable with a variety of programming languages and
-          technologies. devoted to producing high-quality results and
-          productively working with cross-functional teams.
+          A software developer with a strong inclination for workable solutions.
+          Possessing a solid understanding of diverse programming languages and
+          technologies. Placing a strong priority on producing results of a high
+          standard while cooperating productively with cross-functional teams.
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="">
