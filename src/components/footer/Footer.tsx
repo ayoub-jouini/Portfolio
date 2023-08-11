@@ -35,7 +35,7 @@ const Footer: React.FC<Props> = () => {
                 Adress
               </h4>
               <p className="text-sm md:text-base text-primary1 dark:text-white1">
-                15 omar ibn abdelaziz street,Megrine Riadh
+                Ben Arous, Tunisie
               </p>
             </div>
           </div>
