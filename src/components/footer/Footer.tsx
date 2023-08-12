@@ -35,7 +35,7 @@ const Footer: React.FC<Props> = () => {
                 Adress
               </h4>
               <p className="text-sm md:text-base text-primary1 dark:text-white1">
-                Ben Arous, Tunisie
+                Ben Arous, Tunisia
               </p>
             </div>
           </div>
