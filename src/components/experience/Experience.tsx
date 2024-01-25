@@ -17,7 +17,7 @@ const Experience: React.FC<Props> = () => {
           {experience.map((exp, key) => (
             <div
               key={key}
-              className={`cursor-pointer border-2 dark:border-secondary border-tertiary rounded-[25px] md:rounded-[33px] min-w-[15rem] md:w-10/12 h-20 md:h-24 py-3 px-7  flex flex-col justify-between mr-5 md:mb-5 dark:hover:bg-secondary hover:bg-tertiary dark:hover:text-primary1 hover:text-white1 transition ease-in-out delay-100 ${
+              className={`cursor-pointer border-2 dark:border-secondary border-tertiary rounded-[25px] md:rounded-[33px] min-w-[15.8rem] md:w-10/12 h-20 md:h-24 py-3 px-7  flex flex-col justify-between mr-5 md:mb-5 dark:hover:bg-secondary hover:bg-tertiary dark:hover:text-primary1 hover:text-white1 transition ease-in-out delay-100 ${
                 activeExp === exp.id
                   ? "dark:bg-secondary dark:text-primary1 bg-tertiary text-white1"
                   : " dark:text-secondary text-tertiary"

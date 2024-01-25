@@ -11,7 +11,21 @@ const Education: React.FC<Props> = () => {
       <h2 className="mb-8 md:mb-16 text-center font-semibold text-2xl md:text-4xl text-primary1 dark:text-white1">
         Education
       </h2>
-      <div className="px-4 md:px-8 mx-auto lg:max-w-7xl grid grid-rows-2 md:grid-cols-2 justify-items-center gap-10 md:gap-5">
+      <div className="px-4 md:px-8 mx-auto lg:max-w-7xl grid grid-rows-2 md:grid-cols-2 justify-items-center md:justify-items-start gap-10 md:gap-8">
+      <div className="flex">
+          <EducationIcon />
+          <div className="flex flex-col justify-between">
+            <div className="border-2 dark:border-secondary border-tertiary rounded-[24px] h-10 w-32 flex items-center justify-center dark:text-secondary text-tertiary text-base">
+              <p>2023-Present</p>
+            </div>
+            <h3 className="text-xl md:text-2xl font-semibold text-primary1 dark:text-white1">
+              Software Engineering
+            </h3>
+            <h4 className="text-base md:text-2xl text-primary1 dark:text-white1">
+              SESAME Higher School of Applied Sciences and Management
+            </h4>
+          </div>
+        </div>
         <div className="flex">
           <EducationIcon />
           <div className="flex flex-col justify-between">

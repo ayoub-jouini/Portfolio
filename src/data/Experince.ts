@@ -1,6 +1,21 @@
 const experience = [
   {
     id: 0,
+    title: "SAP Technical Consultant",
+    organisation: "VEO Worldwide Services",
+    date: "Sep 2023-Present",
+    description: `Developing and maintaining SAP applications using the ABAP programming language was my main responsibility.
+    I worked closely with functional analysts to understand and refine technical specifications so that the technical
+    and functional components of the projects integrated seamlessly.
+    <br/>
+    <br/>
+    I worked hard to maintain best practices in ABAP development,
+    with a focus on performance optimization, to guarantee the dependability and effectiveness of the SAP programs that were under 
+    my responsibility.
+`,
+  },
+  {
+    id: 1,
     title: "Fullstack Developer",
     organisation: "The DevThingz",
     date: "Feb 2023-May 2023",
@@ -16,7 +31,7 @@ const experience = [
 `,
   },
   {
-    id: 1,
+    id: 2,
     title: "Front-end Developer",
     organisation: "Digicross",
     date: "jul 2022-aug 2022",
@@ -66,7 +81,7 @@ const experience = [
   // `,
   //   },
   {
-    id: 4,
+    id: 3,
     title: "Fullstack Developer",
     organisation: "Orenda JE",
     date: "2020-2023",
