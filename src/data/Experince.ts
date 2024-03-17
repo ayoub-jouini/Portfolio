@@ -1,14 +1,14 @@
 const experience = [
   {
     id: 0,
-    title: "SAP Technical Consultant",
+    title: "Software Developer",
     organisation: "VEO Worldwide Services",
     date: "Sep 2023-Present",
-    description: `Developing and maintaining SAP applications using the ABAP programming language was my main responsibility.
+    description: `Developing and maintaining SAP applications using SQL and the ABAP programming language was my main responsibility.
     I worked closely with functional analysts to understand and refine technical specifications so that the technical
     and functional components of the projects integrated seamlessly.
     <br/>
-    <br/>I worked hard to maintain best practices in ABAP development,
+    <br/>I worked to maintain best practices in ABAP development,
     with a focus on performance optimization, to guarantee the dependability and effectiveness of the SAP programs that were under 
     my responsibility.
 `,
@@ -79,23 +79,23 @@ const experience = [
   //     I frequently facilitated knowledge-sharing sessions, workshops, and training courses.
   // `,
   //   },
-//   {
-//     id: 3,
-//     title: "Fullstack Developer",
-//     organisation: "Orenda JE",
-//     date: "2020-2023",
-//     description: `My first position as a web developer with Orenda Junior Entreprise was a
-//      pivotal moment in my life since it allowed me to get extensive experience with web development tools including Javascript, ReactJS, NextJS, NodeJS, ExpressJS, and MongoDB...
-//     <br/>
-//     <br/>
-//     I quickly obtained practical experience and improved my comprehension of front-end and back-end
-//     development principles and best practices by working on modest projects.
-//     <br/>
-//     <br/>
-//     During this encounter, I improved my coding, problem-solving, and debugging abilities.
-//     I developed my skills in using web development frameworks and tools to build dynamic, user-friendly websites.
-// `,
-//   },
+  //   {
+  //     id: 3,
+  //     title: "Fullstack Developer",
+  //     organisation: "Orenda JE",
+  //     date: "2020-2023",
+  //     description: `My first position as a web developer with Orenda Junior Entreprise was a
+  //      pivotal moment in my life since it allowed me to get extensive experience with web development tools including Javascript, ReactJS, NextJS, NodeJS, ExpressJS, and MongoDB...
+  //     <br/>
+  //     <br/>
+  //     I quickly obtained practical experience and improved my comprehension of front-end and back-end
+  //     development principles and best practices by working on modest projects.
+  //     <br/>
+  //     <br/>
+  //     During this encounter, I improved my coding, problem-solving, and debugging abilities.
+  //     I developed my skills in using web development frameworks and tools to build dynamic, user-friendly websites.
+  // `,
+  //   },
 ];
 
 export default experience;
